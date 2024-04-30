@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="monsters.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="backgroundAudio">
+        <source src="sounds/moonshine.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    <header>
+        <div>Geometry Clicker</div>
+        <button id="loginButton">Login</button>
+    </header>
+
+    <div class="siteContainer">
+        <div class="clickingContainer">
+        <div class="runInfo">
+            <div class="waveContainer">
+                <div class="waveCounter">Until Boss: 15</div>
+            </div>
+            <div class="userCoins">
+                <div class="costNumber">0</div>
+                <img class="userCoinImg" src="images/coin.svg" alt="NaN">
+            </div>
+        </div>
+
+            <div class="monsterContainer">
+                <div class="monsterHealthContainer">
+                    <div class="monsterName">None Loaded</div>
+                    <div class="monsterDetails">
+                        <div class="isBoss"></div>
+                        <div class="monsterLevel">Lv. ???</div>
+                    </div>
+                    <div class="monsterHealthBar">
+                        <div class="monsterHealthFill"></div>
+                    </div>
+                </div>
+
+                <div class="monsterArea">
+                </div>
+                <div class="monsterPodium"></div>
+            </div>
+            
+            <div class="critShow"></div>
+            
+            <div id="result"></div>
+            <div class="userHealthContainer">
+                <div class="userHealthText">
+                    <div class="userHealthTitle">Your Health</div>
+                    <div class="userHealthPoints">
+                        <div class="userCurrentHealth">100</div>
+                        <div class="dash">/</div>
+                        <div class="userMaxHealth">100</div>
+                    </div>
+                </div>
+                <div class="userHealthBar">
+                    <div class="userHealthFill"></div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="upgradeContainer">
+            <!--<div class="authContainer">
+                <button id="closeAuthContainer">X</button>
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <input type="text" id="loginUsername" placeholder="Username" required>
+                    <input type="password" id="loginPassword" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <div id="loginMessage"></div>
+            
+                <h2>Register</h2>
+                <form id="registerForm">
+                    <input type="text" id="registerUsername" placeholder="Username" required>
+                    <input type="password" id="registerPassword" placeholder="Password" required>
+                    <button type="submit">Register</button>
+                </form>
+                <div id="registerMessage"></div>
+            </div>
+        -->
+            <div class="upgrades-wrapper">
+                <div class="upgrades">
+
+                    
+                </div>
+            </div>
+            <div class="extraButtons">
+                <div class="potionButton">
+                    <img class="healPotion" src="images/usePotion.svg">
+                    <div class="healText">
+                    <div class="healInstruction">Press Shift</div>
+                    <div class="healDetails">- heals 10% -</div>
+                        <div class="healCoins">
+                            <div class="healNumber">50</div>
+                            <img class="healCoinImg" src="images/coin.svg" alt="NaN">
+                        </div>
+                    </div>
+                </div>
+                <div class="slotsContainer">
+                    <img class="slotsButton" src="images/slots.svg">
+                </div>
+            </div>
+        </div>
+        
+            <div class="qteContainer">
+                <div class="qteLetter">-</div>
+                <div class="qteBar">
+                    <div class="qteFill"></div>
+                </div>
+            </div>
+    </div>
+
+    <script src="scripts/player.js"></script>
+    <script src="scripts/qte.js"></script>
+    <script src="scripts/backgroundAnim.js"></script>
+    <script src="scripts/monsterGeneration.js"></script>
+    <script src="scripts/upgrades.js"></script>
+    <script src="scripts/symbols.js"></script>
+    <script src="scripts/slotMachine.js"></script>
+    <script src="scripts/game.js"></script>
+    <script src="scripts/login.js"></script>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
